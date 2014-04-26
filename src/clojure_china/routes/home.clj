@@ -1,9 +1,9 @@
 (ns clojure-china.routes.home
   (:use compojure.core)
-  (:require [clojure-china.views.layout :as layout]))
+  (:require [noir.response :refer [redirect]]))
 
 (defn home-page []
-  "It works!")
+  (redirect "/posts"))
 
 (defroutes home-routes
   (GET "/" [] (home-page)))

@@ -1,6 +1,7 @@
 (ns clojure-china.handler
   (:require [compojure.core :refer [defroutes]]
             [clojure-china.routes.home :refer [home-routes]]
+            [clojure-china.routes.posts :refer [posts-routes]]
             [clojure-china.middleware :as middleware]
             [noir.util.middleware :refer [app-handler]]
             [compojure.route :as route]
@@ -42,7 +43,7 @@
 
 (def app (app-handler
            ;; add your application routes here
-           [home-routes app-routes]
+           [home-routes posts-routes app-routes]
            ;; add custom middleware here
            :middleware [middleware/log-request]
            ;; add access rules here

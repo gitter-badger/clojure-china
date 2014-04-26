@@ -20,7 +20,8 @@
    [compojure "1.1.6"]
    [ragtime "0.3.7"]
    [korma "0.3.1"]
-   [postgresql/postgresql "9.1-901-1.jdbc4"]]
+   [postgresql/postgresql "9.1-901-1.jdbc4"]
+   [enlive "1.1.5"]]
   :ring
   {:handler clojure-china.handler/app,
    :init clojure-china.handler/init,
