@@ -39,5 +39,5 @@
     :env {:dev true}}}
   :plugins
   [[lein-ring "0.8.10"]
-   [lein-environ "0.5.0"]
+   ;;[lein-environ "0.5.0"]
    [ragtime/ragtime.lein "0.3.7"]])
